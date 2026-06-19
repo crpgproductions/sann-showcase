@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg1"
+   width="34.080002"
+   height="15.36"
+   viewBox="0 0 34.080002 15.36"
+   sodipodi:docname="logo.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="21.17378"
+     inkscape:cx="19.316343"
+     inkscape:cy="11.169475"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g1" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g1">
+    <rect
+       style="fill:#fff11a;fill-opacity:0.882353;stroke-width:0.911097"
+       id="rect1"
+       width="8.076025"
+       height="0.75565153"
+       x="24.936502"
+       y="10.673578" />
+    <rect
+       style="fill:#fff11a;fill-opacity:0.882353;stroke-width:0.905753"
+       id="rect1-8"
+       width="7.9815693"
+       height="0.75565153"
+       x="0.62519819"
+       y="-22.629374"
+       transform="rotate(90)" />
+    <rect
+       style="fill:#fff11a;fill-opacity:0.882353;stroke-width:0.905753"
+       id="rect1-8-2"
+       width="7.9815693"
+       height="0.75565153"
+       x="-25.948959"
+       y="-19.685444"
+       transform="rotate(155)" />
+    <rect
+       style="fill:#fff11a;fill-opacity:0.882353;stroke-width:0.905753"
+       id="rect1-8-1"
+       width="7.9815693"
+       height="0.75565153"
+       x="-12.709252"
+       y="-25.18786"
+       transform="rotate(122)" />
+    <text
+       xml:space="preserve"
+       style="font-weight:500;font-size:10.6667px;line-height:1.25;font-family:LondonMM;-inkscape-font-specification:'LondonMM Medium'"
+       x="4.7134976"
+       y="14.423455"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         x="4.7134976"
+         y="14.423455"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.6667px;font-family:LondonMM;-inkscape-font-specification:LondonMM">Sann</tspan></text>
+  </g>
+</svg>
