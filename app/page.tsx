@@ -9,7 +9,7 @@ export default function Home() {
         <Menu />
 
         <div className="flex flex-col">
-          <h1 className="font-light text-5xl tracking-tight text-black dark:text-zinc-50"> Zeigen!</h1>
+          <h1 className="font-light text-5xl tracking-tight text-black dark:text-zinc-50">Zeigen!</h1>
           <Image
             className="block dark:hidden h-auto"
             src="/logo.svg"
@@ -26,6 +26,7 @@ export default function Home() {
             height={0}
             priority
           />
+          <h2 className="font-light text-3xl tracking-tight text-black dark:text-zinc-50 mt-6">Frontend bauen. Testen. Optimieren.</h2>
         </div>
 
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">

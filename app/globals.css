@@ -40,3 +40,19 @@ body {
 .wip2 {
   border: 2px dashed orange;
 }
+
+/* --------------------------------------- */
+/* Radix UI Accordion animations */
+/* --------------------------------------- */
+
+@keyframes slideDown {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+@keyframes slideUp {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+.animate-slideDown { animation: slideDown 0.3s ease; }
+.animate-slideUp { animation: slideUp 0.3s ease; }
