@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "./styles/typography.css";
+
 @custom-variant dark (&:where(.dark, .dark *));
 
 * {
@@ -38,7 +40,7 @@ body {
 }
 
 .wip2 {
-  border: 2px dashed orange;
+  border: 2px dashed purple;
 }
 
 /* --------------------------------------- */
