@@ -39,7 +39,8 @@ export default function Projects() {
 
 
       <section className="w-full py-16 border-b border-black/[.06] dark:border-white/[.06]">
-        <p className="text-sm uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-4">Quellcode</p>
+        <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Quellcode</p>
+
         <a
           href="https://github.com/crpgproductions/sann-showcase"
           target="_blank"
@@ -123,7 +124,7 @@ export default function Projects() {
       <section className="w-full py-16">
         <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Weitere Projekte</p>
         <p className="my-6 w-full text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Folgende Projekte dürfen aus verschiedenen Gründen nicht in voller Pracht gezeigt werden, aber ein kleiner Einblick hinein ist allemal möglich.
+          Folgende Projekte können aus verschiedenen Gründen nicht in voller Pracht gezeigt werden, aber ein kleiner Einblick hinein ist allemal möglich.
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
