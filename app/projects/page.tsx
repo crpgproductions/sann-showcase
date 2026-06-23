@@ -1,27 +1,28 @@
 'use client'
-import PageSkeleton from "@/app/components/PageSkeleton";
-import Image from "next/image";
 import { useState } from "react";
+import Image from "next/image";
+import ImageModal from "@/app/components/ImageModal";
+import PageSkeleton from "@/app/components/PageSkeleton";
 
 const projects = [
   {
-    name: "Projekt Eins",
+    name: "Firmenhomepage",
     description: "Kurze Beschreibung was das Projekt macht.",
-    tags: ["Next.js", "Tailwind"],
-    thumbnail: "/images/p1.jpg",
+    tags: ["Wordpress", "PHP", "Javascript", "HTML", "SCSS"],
+    thumbnail: "/images/project1.jpg",
   },
   {
-    name: "Projekt Zwei", 
-    description: "Noch ein Projekt. Platzhalter austauschen.",
-    tags: ["React", "Node.js"],
-    thumbnail: "/images/p2.jpg",
+    name: "Shopware 6 Shop", 
+    description: "Themeerstellung für einen SW6 Store",
+    tags: ["Shopware 6", "Twig", "Javascript", "HTML", "SCSS"],
+    thumbnail: "/images/project2.jpg",
   },
   {
-    name: "Projekt Drei",
-    description: "Und noch eines.",
-    tags: ["Figma", "CSS"],
-    thumbnail: "/images/p3.jpg",
-  },
+    name: "Videoproduktion",
+    description: "Hobby Videoprojekt, Erstelleung einiger Videos auf Youtube",
+    tags: ["Clipchamp", "Shotcut", "Paintshop Pro", "Nvidia"],
+    thumbnail: "/images/project3.jpg",
+  }
 ];
 
 
@@ -64,7 +65,11 @@ export default function Projects() {
 
       {/* Section 2 — Legacy portals */}
       <section className="w-full py-16 border-b border-black/[.06] dark:border-white/[.06]">
-        <p className="text-sm uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-8">Showcase-ception</p>
+        <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Showcase-ception</p>
+        <p className="my-6 w-full text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+          Es gab schon ältere Showcases vor diesem hier, und diese beinhalteten wiederum einige Projekte, die ich in der Vergangenheit umgesetzt habe. Viel Spaß beim stöbern in der Vergangenheit!
+        </p>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
             {
@@ -93,6 +98,8 @@ export default function Projects() {
                   alt={portal.label}
                   title="Link öffnet in neuem Tab"
                   fill
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  loading="eager"
                   className="object-cover grayscale opacity-60 group-hover:opacity-90 group-hover:grayscale-0"
                 />
               </div>
@@ -109,15 +116,16 @@ export default function Projects() {
             </a>
           ))}
         </div>
-        <p className="mt-6 w-full text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Es gab schon ältere Showcases vor diesem hier, und diese beinhalteten wiederum einige Projekte, die ich in der Vergangenheit umgesetzt habe. Viel Spaß beim stöbern in der Vergangenheit!
-        </p>
       </section>
 
 
       {/* Section 3 — Other projects */}
       <section className="w-full py-16">
-        <p className="text-sm uppercase tracking-widest text-zinc-400 dark:text-zinc-600 mb-8">Weitere Projekte</p>
+        <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Weitere Projekte</p>
+        <p className="my-6 w-full text-lg leading-8 text-zinc-600 dark:text-zinc-400">
+          Folgende Projekte dürfen aus verschiedenen Gründen nicht in voller Pracht gezeigt werden, aber ein kleiner Einblick hinein ist allemal möglich.
+        </p>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
             <div
@@ -140,7 +148,7 @@ export default function Projects() {
 
               {/* Card body */}
               <div className="flex flex-col gap-3 p-6 flex-1">
-                <h3 className="font-medium text-black dark:text-white">
+                <h3 className="font-semibold text-black dark:text-white">
                   {project.name}
                 </h3>
                 <p className="text-sm text-zinc-500 dark:text-zinc-400 flex-1">
@@ -164,26 +172,7 @@ export default function Projects() {
 
       {/* Modal — full size images! */}
       {modalImage && (
-        <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
-          onClick={() => setModalImage(null)}
-        >
-          <div className="relative max-w-5xl w-full aspect-video rounded-2xl overflow-hidden">
-            <Image
-              src={modalImage}
-              alt="Preview"
-              fill
-              sizes="100vw"
-              priority
-            />
-          </div>
-          <button
-            className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors text-sm"
-            onClick={() => setModalImage(null)}
-          >
-            ✕ Schließen
-          </button>
-        </div>
+        <ImageModal src={modalImage} onClose={() => setModalImage(null)} />
       )}
 
     </PageSkeleton>
