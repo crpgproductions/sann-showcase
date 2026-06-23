@@ -26,7 +26,7 @@ export default function Home() {
         <h2 className="font-light text-3xl tracking-tight text-black dark:text-zinc-50 mt-6">Frontend bauen. Testen. Optimieren.</h2>
       </div>
 
-      <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left my-10">
+      {/*<div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left my-10">
         <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
           To get started, edit the page.tsx file.
         </h1>
@@ -47,11 +47,7 @@ export default function Home() {
           </a>{" "}
           center.
         </p>
-      </div>
-
-
-
-
+      </div>*/}
 
       <div className="flex flex-col">
         <div className="grid grid-cols-1 md:grid-cols-12 w-full gap-6 my-12 font-light text-black dark:text-zinc-50">
@@ -64,9 +60,6 @@ export default function Home() {
           <div className="md:col-span-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
         </div>
       </div>
-
-
-
 
       <div className="flex flex-col gap-4 text-base font-medium sm:flex-row my-10">
         <a

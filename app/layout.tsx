@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Footer from "@/app/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,12 +17,6 @@ export const metadata: Metadata = {
   title: "Sann showcase",
   description: "Projekte zeigen, Eindruck vermitteln, Spaß haben.",
 };
-
-
-
-
-
-
 
 export default function RootLayout({
   children,
