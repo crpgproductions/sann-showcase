@@ -48,8 +48,8 @@ function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      aria-label="Toggle theme"
-      className="flex items-center justify-center rounded-full p-2 text-gray-300 transition hover:bg-white hover:text-black"
+      aria-label="Tag/Nachtmodus wechseln"
+      className="flex items-center justify-center rounded-full cursor-pointer p-2 text-gray-300 transition hover:bg-white hover:text-black"
     >
       {mounted ? (resolvedTheme === "dark" ? <Sun size={18} /> : <Moon size={18} />) : (
         // Placeholder to prevent layout shift
