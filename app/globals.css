@@ -10,6 +10,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --white: #ffffff;
+  --black: #000000;
+  --transparent: transparent;
+  --blue-500: #3b82f6;
+  --blue-400: #60a5fa;
+  --blue-300: #93c5fd;
+  --indigo-300: #a5b4fc;
+  --violet-200: #ddd6fe;
 }
 
 @theme inline {
@@ -58,3 +66,24 @@ body {
 
 .animate-slideDown { animation: slideDown 0.3s ease; }
 .animate-slideUp { animation: slideUp 0.3s ease; }
+
+/* --------------------------------------- */
+/* Aurora Background Animation */
+/* --------------------------------------- */
+@keyframes aurora {
+  from {
+    background-position: 50% 50%, 50% 50%;
+  }
+
+  to {
+    background-position: 350% 50%, 350% 50%;
+  }
+}
+
+@utility animate-aurora {
+  animation: aurora 60s linear infinite;
+}
+
+/* --------------------------------------- */
+/* All further stuff... */
+/* --------------------------------------- */
