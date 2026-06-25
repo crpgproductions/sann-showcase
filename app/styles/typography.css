@@ -1,6 +1,7 @@
 @font-face {
   font-family: "LondonMM";
-  src: url("../../public/fonts/LondonMM.ttf") format("truetype");
+  src: url("/fonts/LondonMM.woff2") format("woff2"),
+    url("/fonts/LondonMM.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
