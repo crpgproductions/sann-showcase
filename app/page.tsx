@@ -1,6 +1,7 @@
 import Image from "next/image";
 import PageSkeleton from "@/app/components/PageSkeleton";
 import { FolderOpen, User } from "lucide-react";
+import Logo from "./components/Logo";
 
 export default function Home() {
   const portals = [
@@ -17,26 +18,11 @@ export default function Home() {
   ];
 
   return (
-    <PageSkeleton>
+    <PageSkeleton showLogo={false}>
 
       <div className="flex flex-col w-full">
         <h1 className="font-light text-5xl tracking-tight text-black dark:text-zinc-50">Zeigen!</h1>
-        <Image
-          className="block dark:hidden h-auto"
-          src="/logo.svg"
-          alt="Sann showcase"
-          width={350}
-          height={0}
-          priority
-        />
-        <Image
-          className="hidden dark:block h-auto"
-          src="/logo-dark.svg"
-          alt="Sann showcase"
-          width={350}
-          height={0}
-          priority
-        />
+        <Logo width={350} />
         <h2 className="font-light text-3xl tracking-tight text-black dark:text-zinc-50 mt-6">Frontend bauen. Testen. Optimieren.</h2>
       </div>
 

@@ -8,6 +8,7 @@
 }
 
 :root {
+  --border-subtle: 1px solid rgb(0 0 0 / 0.06);
   --white: #ffffff;
   --black: #000000;
   --transparent: transparent;
@@ -146,6 +147,7 @@ body {
 /* --------------------------------------- */
 
 .dark {
+  --border-subtle: 1px solid rgb(255 255 255 / 0.06);
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);
   --card: oklch(0.205 0 0);

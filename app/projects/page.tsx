@@ -38,7 +38,7 @@ export default function Projects() {
       </h1>
 
 
-      <section className="w-full py-16 border-b border-black/[.06] dark:border-white/[.06]">
+      <section /*style={{ borderBottom: "var(--border-subtle)" }}*/ className="w-full py-16">
         <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Quellcode</p>
 
         <a
@@ -65,7 +65,7 @@ export default function Projects() {
 
 
       {/* Section 2 — Legacy portals */}
-      <section className="w-full py-16 border-b border-black/[.06] dark:border-white/[.06]">
+      <section /*style={{ borderBottom: "var(--border-subtle)" }}*/ className="w-full py-16">
         <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Showcase-ception</p>
         <p className="my-6 w-full text-lg leading-8 text-zinc-600 dark:text-zinc-400">
           Es gab schon ältere Showcases vor diesem hier, und diese beinhalteten wiederum einige Projekte, die ich in der Vergangenheit umgesetzt habe. Viel Spaß beim stöbern in der Vergangenheit!
