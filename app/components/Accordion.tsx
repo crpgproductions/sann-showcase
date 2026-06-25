@@ -3,7 +3,7 @@ import { Root, Item, Trigger, Content } from "@radix-ui/react-accordion";
 
 interface AccordionItem {
   title: string;
-  content: string;
+  content: React.ReactNode;
 }
 
 interface AccordionProps {
