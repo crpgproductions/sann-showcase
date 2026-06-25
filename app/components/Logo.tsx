@@ -9,22 +9,24 @@ interface LogoProps {
 export default function Logo({ width = 150, href }: LogoProps) {
     const image = (
         <>
-            <Image
+            <img
                 className="block dark:hidden"
                 src="/logo.svg"
                 alt="Sann showcase"
                 width={width}
                 height={0}
                 /*priority*/
+                loading="eager"
                 style={{ width: `${width}px`, height: "auto" }}
             />
-            <Image
+            <img
                 className="hidden dark:block"
                 src="/logo-dark.svg"
                 alt="Sann showcase"
                 width={width}
                 height={0}
                 /*priority*/
+                loading="eager"
                 style={{ width: `${width}px`, height: "auto" }}
             />
         </>

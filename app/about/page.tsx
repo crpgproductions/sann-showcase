@@ -1,5 +1,24 @@
 import Accordion from "@/app/components/Accordion";
 import PageSkeleton from "@/app/components/PageSkeleton";
+import Timeline from "@/app/components/Timeline";
+
+const experience = [
+  {
+    title: "College",
+    description: "Ausbildung in Mediengestaltung oder was auch immer hier hingehört.",
+    tags: ["HTML", "CSS", "PHP"],
+  },
+  {
+    title: "Company One",
+    description: "Was ich dort gemacht hab und was ich gelernt hab.",
+    tags: ["React", "TypeScript", "Figma"],
+  },
+  {
+    title: "Company Two",
+    description: "Nächste Station, nächste Erfahrungen.",
+    tags: ["Next.js", "Tailwind", "Node.js"],
+  },
+];
 
 export default function About() {
 
@@ -13,6 +32,8 @@ export default function About() {
 
   return (
     <PageSkeleton>
+
+
 
       <Accordion items={faq} />
 
