@@ -2,32 +2,19 @@ import Accordion from "@/app/components/Accordion";
 import PageSkeleton from "@/app/components/PageSkeleton";
 
 export default function About() {
+
+  const faq = [
+    { title: "Was mach ich?", content: "Ich bau Sachen im Web." },
+    { title: "Womit?", content: "Next.js, TypeScript, Tailwind." },
+    { title: "Warum?", content: "Weil's Spaß macht." },
+    { title: "Für wen?", content: "Für alle möglichen Leute." },
+    { title: "Kontakt?", content: "Schreib mir einfach." },
+  ];
+
   return (
     <PageSkeleton>
-      <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-        <h1 className="max-w-xs text-3xl font-light leading-10 tracking-tight text-black dark:text-zinc-50">
-          Über mich
-        </h1>
-        <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Looking for a starting point or more instructions? Head over to{" "}
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            className="font-medium text-zinc-950 dark:text-zinc-50"
-          >
-            Templates
-          </a>{" "}
-          or the{" "}
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            className="font-medium text-zinc-950 dark:text-zinc-50"
-          >
-            Learning
-          </a>{" "}
-          center.
-        </p>
-      </div>
 
-      <Accordion />
+      <Accordion items={faq} />
 
     </PageSkeleton>
   );

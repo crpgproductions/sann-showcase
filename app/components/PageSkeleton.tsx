@@ -20,9 +20,11 @@ export default function PageSkeleton({ children, showLogo = true }: PageSkeleton
             <hr style={{ border: "none", borderTop: "var(--border-subtle)" }} className="mt-4 w-full" />
           </div>
         )}
-        <div className={showLogo ? "" : "mt-24"}>
-          {children}
-        </div>
+        {showLogo ? children : (
+          <div className="mt-24 w-full">
+            {children}
+          </div>
+        )}
         <Footer className="mt-auto" />
       </main>
     </AuroraBackground>
