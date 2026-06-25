@@ -3,6 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import ImageModal from "@/app/components/ImageModal";
 import PageSkeleton from "@/app/components/PageSkeleton";
+import Headline from "../components/Headline";
+import SectionBlock from "../components/SectionBlock";
 
 const projects = [
   {
@@ -32,11 +34,7 @@ export default function Projects() {
   return (
     <PageSkeleton>
 
-
-      <h1 className="max-w-xs text-3xl font-light leading-10 tracking-tight text-black dark:text-zinc-50">
-        Projekte
-      </h1>
-
+      <Headline title={"Projekte"} />
 
       <section /*style={{ borderBottom: "var(--border-subtle)" }}*/ className="w-full py-16">
         <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Quellcode</p>
@@ -66,10 +64,7 @@ export default function Projects() {
 
       {/* Section 2 — Legacy portals */}
       <section /*style={{ borderBottom: "var(--border-subtle)" }}*/ className="w-full py-16">
-        <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Showcase-ception</p>
-        <p className="my-6 w-full text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Es gab schon ältere Showcases vor diesem hier, und diese beinhalteten wiederum einige Projekte, die ich in der Vergangenheit umgesetzt habe. Viel Spaß beim stöbern in der Vergangenheit!
-        </p>
+        <SectionBlock title={"Showcase-ception"} children={<>Es gab schon ältere Showcases vor diesem hier, und diese beinhalteten wiederum einige Projekte, die ich in der Vergangenheit umgesetzt habe. Viel Spaß beim stöbern in der Vergangenheit!</>} />
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           {[
@@ -122,11 +117,7 @@ export default function Projects() {
 
       {/* Section 3 — Other projects */}
       <section className="w-full py-16">
-        <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">Weitere Projekte</p>
-        <p className="my-6 w-full text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-          Folgende Projekte können aus verschiedenen Gründen nicht in voller Pracht gezeigt werden, aber ein kleiner Einblick hinein ist allemal möglich.
-        </p>
-
+        <SectionBlock title={"Weitere Projekte"} children={<>Folgende Projekte können aus verschiedenen Gründen nicht in voller Pracht gezeigt werden, aber ein kleiner Einblick hinein ist allemal möglich.</>} />
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {projects.map((project) => (
             <div

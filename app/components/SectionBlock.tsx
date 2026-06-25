@@ -3,12 +3,13 @@
 interface SectionBlockProps {
     title: string;
     children: React.ReactNode;
+    className?: string;
 }
 
-export default function SectionBlock({ title, children }: SectionBlockProps) {
+export default function SectionBlock({ title, children, className }: SectionBlockProps) {
     return (
-        <section className="mb-12">
-            <p className="text-sm uppercase tracking-widest text-zinc-800 dark:text-zinc-200 mb-8">
+        <section className={`${className}`}>
+            <p className="uppercase tracking-widest text-zinc-800 dark:text-zinc-200">
                 {title}
             </p>
 

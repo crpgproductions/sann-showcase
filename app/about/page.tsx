@@ -1,6 +1,8 @@
 import Accordion from "@/app/components/Accordion";
 import PageSkeleton from "@/app/components/PageSkeleton";
 import Timeline from "@/app/components/Timeline";
+import Headline from "../components/Headline";
+import SectionBlock from "../components/SectionBlock";
 
 const journey = [
   {
@@ -53,6 +55,7 @@ export default function About() {
       title: "Was ist deine Devise?",
       content: <>
         <p>&quot;Reden ist Silber, <span className="line-through">schweigen</span> zeigen ist Gold.&quot;</p>
+        <p>So, oder ähnlich. Ich denke, die beste Möglichkeit etwas zu beweisen ist einfach zu zeigen was man kann.</p>
       </>
     },
     {
@@ -94,8 +97,15 @@ export default function About() {
   return (
     <PageSkeleton>
 
+      <Headline title={"Über mich"}  />
+
+      <SectionBlock title={"Meine Reise"} children={<>AAAA</>} className="pt-16 "/>
       <Timeline items={journey} />
 
+      <SectionBlock title={"Schwerpunkte"} children={<>BBBB</>} />
+
+
+      <SectionBlock title={"FAQ"} children={<>Häufig gestellte Fragen beantworte ich hier direkt.</>} />
       <Accordion items={faq} />
 
     </PageSkeleton>
