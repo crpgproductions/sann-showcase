@@ -21,7 +21,7 @@ export default function Accordion({ items }: AccordionProps) {
               ↓
             </span>
           </Trigger>
-          <Content className="w-full overflow-hidden text-sm text-zinc-500 dark:text-zinc-400 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp">
+          <Content className="w-full overflow-hidden text-zinc-500 dark:text-zinc-400 data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp">
             <div className="pb-4">{item.content}</div>
           </Content>
         </Item>

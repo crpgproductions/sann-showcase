@@ -11,6 +11,7 @@ const iconMap: Record<string, LucideIcon> = {
 
 interface FocalItem {
     iconName: string;
+    title: string;
     text?: string;
     tags?: string[];
 }
@@ -69,7 +70,18 @@ export default function FocalSlideshow({ items }: FocalSlideshowProps) {
                     transition: "opacity 200ms ease, transform 200ms ease",
                 }}
             >
-                {Icon && <Icon size={72} className="text-zinc-300 dark:text-zinc-600" />}
+                <div className="w-full flex flex-col items-center justify-center gap-4">
+                    {Icon && (
+                        <Icon
+                            size={72}
+                            className="text-zinc-300 dark:text-zinc-600"
+                        />
+                    )}
+
+                    <h3 className="text-lg font-medium text-zinc-700 dark:text-zinc-300">
+                        {activeItem.title}
+                    </h3>
+                </div>
                 {activeItem.text && (
                     <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-7">
                         {activeItem.text}
