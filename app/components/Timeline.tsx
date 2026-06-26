@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { LucideIcon, GraduationCap, Building2, School, Zap, Briefcase, DraftingCompass, Laptop } from "lucide-react";
+import { LucideIcon, GraduationCap, Building2, School, Zap, Briefcase, DraftingCompass, Laptop, Library } from "lucide-react";
 
 type IconType = React.ComponentType<{ className?: string }>;
 
@@ -13,6 +13,7 @@ const iconMap: Record<string, LucideIcon> = {
     circuit: Zap,
     office: Briefcase,
     business: DraftingCompass,
+    study: Library,
     frontend: Laptop,
 };
 

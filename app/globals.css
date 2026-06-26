@@ -113,17 +113,31 @@ body {
 /* Radix UI Accordion animations */
 /* --------------------------------------- */
 
-@keyframes slideDown {
-  from { height: 0; }
-  to { height: var(--radix-accordion-content-height); }
-}
-@keyframes slideUp {
-  from { height: var(--radix-accordion-content-height); }
-  to { height: 0; }
+@keyframes accordionDown {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
 }
 
-.animate-slideDown { animation: slideDown 0.3s ease; }
-.animate-slideUp { animation: slideUp 0.3s ease; }
+@keyframes accordionUp {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+@utility animate-accordionDown {
+  animation: accordionDown 0.3s ease forwards;
+}
+
+@utility animate-accordionUp {
+  animation: accordionUp 0.3s ease forwards;
+}
 
 /* --------------------------------------- */
 /* Aurora Background Animation */

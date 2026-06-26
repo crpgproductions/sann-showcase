@@ -16,6 +16,7 @@ const journey = [
   },
   {
     title: "Elektrotechnik",
+    description: "Berufsschule",
     detail: <><p>Im Leben muss man experimentieren, und man weiß nicht immer sofort, was einem liegt, oder nicht. Eine Karriere als Elektrotechniker erschien mir damals interessant, doch
     schon nach einigen Monaten in der Berufsschule merkte ich, dass mir das Thema gar nicht liegt.</p>
       <p className="mt-4">Es ist völlig normal, dass man da auch mal scheitert. Wichtig ist, das aber zu erkennen
@@ -25,6 +26,7 @@ const journey = [
   },
   {
     title: "Ausbildung zum Bürokaufmann",
+    description: "Duales System",
     detail: <><p>Die Ausbildung zum Bürokaufmann gefiel mir sehr gut. Ich arbeitete im dualen System und schloss die Ausbildung erfolgreich ab. Direkt danach begang ich meine Vollzeitarbeit im Familienbetrieb.</p></>,
     icons: ["education", "work"],
     iconRight: "office",
@@ -43,7 +45,7 @@ const journey = [
   },
   {
     title: "Studium",
-    description: "Medieninformatik",
+    description: "Fachhochschule, Medieninformatik (B.Sc.)",
     detail: <><p>Ich studierte Medieninformatik an der THM Friedberg. Zuvor musste ich jedoch noch das Fachabitur nachholen, das ich im einjährigen Schnelldurchlauf in der Form B vollzog.</p>
       <p className="mt-4">Das Leben an der Hochschule war für mich durchaus ein Sprung in eine andere Welt. Die Module waren sehr unterschiedlich, und auch komplex, doch ich hatte ein klares Ziel und auch einen klaren
       Weg vor Augen, und so meisterte ich auch das.</p>
@@ -53,6 +55,7 @@ const journey = [
   },
   {
     title: "Frontend-Entwicklung",
+    description: "In zwei Unternehmen derselben Firmengruppe",
     detail: <><p>Es dauerte nicht lange, bis ich direkt nach meinem Studium dann auch eine Arbeitsstelle gefunden hatte. Als Junior-Frontendentwickler gab es immer noch eine gewisse Lernkurve, doch mein
       bis dahin schon recht umfassendes Wissen wurde sehr geschätzt. Schon ein paar Jahre später wurde ich dann Lead-Frontendentwickler im Schwesterunternehmen.</p></>,
     icons: ["work"],
@@ -75,11 +78,11 @@ export default function About() {
       title: "Was sind deine Spezialgebiete?",
       content: <>
         <p>Dies hier ist mein Spezialgebiet. Frontend. Dazu gehören <span className="font-semibold">Planung, technischer Aufbau, Testing, Wartung</span>, aber noch vieles mehr. Siehe Slideshow oben.</p>
-        <p className="mt-4">Ich habe auch ein breites Know-How im Bereich Quality Assurance und war eine Zeit lang als
-          QA-Manager aktiv.</p> 
+        <p className="mt-4">Ich habe auch ein breites Know-How im Bereich Quality Assurance und war eine Zeit lang als <span className="font-semibold">QA-Manager</span> aktiv.</p> 
         <p className="mt-4">Datenbanktechnik und Arbeiten am Backend sind etwas, das trotz Schwerpunkt auf das Frontend immer wieder dazugehören. Einer Karriere als Fullstack-Entwickler bin ich nicht abgeneigt.</p>
         <p className="mt-4">Was ich aber noch highlighten möchte ist das Thema <span className="font-semibold">Psychologie</span>. Ich bekomme oft gesagt, dass ich ein umfassendes Wissen über das menschliche
         Verhalten und Denkprozesse hätte. Und das bestätigt sich auch.</p>
+        <p className="mt-4">Neu hinzugekommen ist natürlich auch alles, was mit <span className="font-semibold">KI</span> zu tun hat.</p>
       </>
     },
     {
