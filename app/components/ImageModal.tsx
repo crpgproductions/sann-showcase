@@ -26,7 +26,7 @@ export default function ImageModal({ src, onClose }: ImageModalProps) {
                     src={src}
                     alt="Preview"
                     fill
-                    className="object-cover"
+                    className="object-contain"
                     sizes="100vw"
                     priority
                 />
