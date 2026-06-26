@@ -1,13 +1,19 @@
 "use client";
 
 import { useState } from "react";
-import { GraduationCap, Building2 } from "lucide-react";
+import { LucideIcon, GraduationCap, Building2, School, Zap, Briefcase, DraftingCompass, Laptop } from "lucide-react";
 
 type IconType = React.ComponentType<{ className?: string }>;
 
-const iconMap: Record<string, IconType> = {
+
+const iconMap: Record<string, LucideIcon> = {
     education: GraduationCap,
     work: Building2,
+    school: School,
+    circuit: Zap,
+    office: Briefcase,
+    business: DraftingCompass,
+    frontend: Laptop,
 };
 
 interface TimelineEntry {
@@ -17,7 +23,7 @@ interface TimelineEntry {
     detail?: React.ReactNode;
     tags?: string[];
     icons?: string[];
-    rightIcon?: string;
+    iconRight?: string;
 }
 
 interface TimelineProps {
@@ -101,26 +107,28 @@ export default function Timeline({ items }: TimelineProps) {
             {/* Right — detail panel */}
             <div className="flex flex-col gap-6 pt-1">
 
-                <div>
-                    <h2 className="font-medium text-black dark:text-white text-xl">
+                <div className="w-full flex flex-col items-center justify-center gap-4">
+                    {activeItem.iconRight && (
+                        <div className="text-zinc-500 dark:text-zinc-400">
+                            <span className="text-6xl leading-none">
+                                {(() => {
+                                    const Icon = iconMap[activeItem.iconRight];
+                                    return Icon ? <Icon size={72} className="text-zinc-300 dark:text-zinc-600" /> : null;
+                                })()}
+                            </span>
+                        </div>
+                    )}
+
+                    <h2 className="text-lg font-medium text-zinc-700 dark:text-zinc-300">
                         {activeItem.title}
                     </h2>
 
-                    <span className="text-sm text-zinc-400 dark:text-zinc-600">
-                        {activeItem.year}
-                    </span>
-                </div>
-
-                {activeItem.rightIcon && (
-                    <div className="text-zinc-500 dark:text-zinc-400">
-                        <span className="text-6xl leading-none">
-                            {(() => {
-                                const Icon = iconMap[activeItem.rightIcon];
-                                return Icon ? <Icon /*size={96}*/ /> : null;
-                            })()}
+                    {activeItem.year && (
+                        <span className="text-sm text-zinc-400 dark:text-zinc-600">
+                            {activeItem.year}
                         </span>
-                    </div>
-                )}
+                    )}
+                </div>
 
                 <div className="text-sm text-zinc-500 dark:text-zinc-400 leading-7">
                     {activeItem.detail ?? activeItem.description}

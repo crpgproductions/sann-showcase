@@ -4,49 +4,60 @@ import Timeline from "@/app/components/Timeline";
 import Headline from "../components/Headline";
 import SectionBlock from "../components/SectionBlock";
 import FocalSlideshow from "@/app/components/FocalSlideshow";
-import { Monitor, FlaskConical, Brain, Gauge } from "lucide-react";
 
 const journey = [
   {
     title: "Schule",
-    detail: <><p>A</p></>,
+    detail: <><p>Der Schulunterricht machte mir Spaß und fiel mir leicht. Meine schulische Laufbahn würde ich dennoch nicht als einfach bezeichnen, denn es gab verschiedene
+      Hürden und Herausforderungen, welche nichts mit dem Schulunterricht zu tun hatten, die die Sache ein wenig herausfordernd machten. Doch ich habe es gemeistert und einen
+      erfolgreichen Abschluss vorzuweisen.</p></>,
     icons: ["education"],
-    rightIcon: "education",
+    iconRight: "school",
   },
   {
     title: "Elektrotechnik",
-    detail: <><p>B</p></>,
+    detail: <><p>Im Leben muss man experimentieren, und man weiß nicht immer sofort, was einem liegt, oder nicht. Eine Karriere als Elektrotechniker erschien mir damals interessant, doch
+    schon nach einigen Monaten in der Berufsschule merkte ich, dass mir das Thema gar nicht liegt.</p>
+      <p className="mt-4">Es ist völlig normal, dass man da auch mal scheitert. Wichtig ist, das aber zu erkennen
+      und dann entsprechend schnell zu adaptieren. Entsprechend brach ich dann die Berufsschule zum ersten Halbjahr ab, und vollzog direkt einen Quereinstieg zum Bürokaufmann.</p></>,
     icons: ["education"],
-    rightIcon: "education",
+    iconRight: "circuit",
   },
   {
     title: "Ausbildung zum Bürokaufmann",
-    detail: <><p>C</p></>,
+    detail: <><p>Die Ausbildung zum Bürokaufmann gefiel mir sehr gut. Ich arbeitete im dualen System und schloss die Ausbildung erfolgreich ab. Direkt danach begang ich meine Vollzeitarbeit im Familienbetrieb.</p></>,
     icons: ["education", "work"],
-    rightIcon: "education",
+    iconRight: "office",
   },
   {
     title: "Büroassistenz",
     description: "im Familienbetrieb",
-    detail: <><p>D</p></>,
+    detail: <><p>Ich komme aus einer Maurermeisterfamilie, und wir hatten einen Betrieb, der schlüsselfertige Häuser baute. Viele denken, im Familienbetrieb zu arbeiten macht
+      die Dinge einfach. Das kann ich nicht behaupten. Ich musste schnell Verantwortung übernehmen, und auch Aufgaben übernehmen, die über mein eigentliches Feld hinausgingen, darunter auch Architektur und Marketing.</p>
+      <p className="mt-4">Da gerade eben auch im Internet die Vermarktung zunehmend an Bedeutung gewann, sah ich hier eine gewisse Chance. Ich baute die Firmenwebseite, damals noch ganz klassisch mit HTML4. Spätestens da war
+        mir klar, was mein Spezialgebiet ist.</p>
+        <p>Ich arbeitete noch einige Jahre im Familienbetrieb, doch in der Mitte meiner 20er machte ich mir dann endlich einen kleinen Wunsch wahr: Informatik studieren.</p></>,
     icons: ["work"],
-    rightIcon: "work",
-    tags: ["X"],
+    iconRight: "business",
+    tags: ["Schriftverkehr", "Verträge aufsetzen", "Telefondienst", "Firmenwebsite bauen"],
   },
   {
     title: "Studium",
     description: "Medieninformatik",
-    detail: <><p>E</p></>,
+    detail: <><p>Ich studierte Medieninformatik an der THM Friedberg. Zuvor musste ich jedoch noch das Fachabitur nachholen, das ich im einjährigen Schnelldurchlauf in der Form B vollzog.</p>
+      <p className="mt-4">Das Leben an der Hochschule war für mich durchaus ein Sprung in eine andere Welt. Die Module waren sehr unterschiedlich, und auch komplex, doch ich hatte ein klares Ziel und auch einen klaren
+      Weg vor Augen, und so meisterte ich auch das.</p>
+      <p className="mt-4">Meine Bachelorarbeit befasste sich mit dem Thema Qualitätssicherung für moderne Webanwendungen. Daher mein Expertise im Bereich QA.</p></>,
     icons: ["education"],
-    rightIcon: "education",
-    tags: ["X"],
+    iconRight: "study",
   },
   {
     title: "Frontend-Entwicklung",
-    detail: <><p>F</p></>,
+    detail: <><p>Es dauerte nicht lange, bis ich direkt nach meinem Studium dann auch eine Arbeitsstelle gefunden hatte. Als Junior-Frontendentwickler gab es immer noch eine gewisse Lernkurve, doch mein
+      bis dahin schon recht umfassendes Wissen wurde sehr geschätzt. Schon ein paar Jahre später wurde ich dann Lead-Frontendentwickler im Schwesterunternehmen.</p></>,
     icons: ["work"],
-    rightIcon: "work",
-    tags: ["X"],
+    iconRight: "frontend",
+    tags: ["Themes für Shopware-Shops erstellen/anpassen", "Erstellung eines Frontends für eine IPAAS"],
   }
 ];
 
