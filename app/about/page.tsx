@@ -3,6 +3,8 @@ import PageSkeleton from "@/app/components/PageSkeleton";
 import Timeline from "@/app/components/Timeline";
 import Headline from "../components/Headline";
 import SectionBlock from "../components/SectionBlock";
+import FocalSlideshow from "@/app/components/FocalSlideshow";
+import { Monitor, FlaskConical, Brain, Gauge } from "lucide-react";
 
 const journey = [
   {
@@ -69,6 +71,12 @@ export default function About() {
       </>
     },
     {
+      title: "Welche Frameworks bevorzugst du?",
+      content: <>
+        <p>Ich liebe Vue mit Quasar, sowie React mit Next.js. Ich bin aber offen, jederzeit etwas Neues zu lernen - das ist für mich eine Selbstverständlichkeit.</p>
+      </>
+    },
+    {
       title: "Wo siehst du dich in der Zukunft?",
       content: <>
         <p className="mt-4">Das kann natürlich nur die Zeit selbst zeigen. Im Großen und Ganzen fühle ich mich in dieser Sparte aber sehr gut aufgehoben. Ich werde mich hier auf jeden Fall noch vertiefen, und
@@ -94,15 +102,39 @@ export default function About() {
     },
   ];
 
+  const focal = [
+    {
+      iconName: "Monitor",
+      text: "Frontend Development ist meine Kernkompetenz.",
+      tags: ["React", "Next.js", "Tailwind"],
+    },
+    {
+      iconName: "FlaskConical",
+      text: "Testing ist kein Afterthought.",
+      tags: ["Vitest", "Playwright"],
+    },
+    {
+      iconName: "Brain",
+      text: "Psychologie fließt in jede UX-Entscheidung ein.",
+      tags: ["UX", "Cognitive Load"],
+    },
+    {
+      iconName: "Gauge",
+      text: "Performance ist ein Feature.",
+      tags: ["Core Web Vitals", "Lighthouse"],
+    },
+  ];
+
   return (
     <PageSkeleton>
 
       <Headline title={"Über mich"}  />
 
-      <SectionBlock title={"Meine Reise"} children={<>AAAA</>} className="pt-16 "/>
+      <SectionBlock title={"Meine Reise"} children={<>AAAA</>} className="mt-16 "/>
       <Timeline items={journey} />
 
-      <SectionBlock title={"Schwerpunkte"} children={<>BBBB</>} />
+      <SectionBlock title={"Schwerpunkte"} children={<>BBBB</>} className="mt-6" />
+      <FocalSlideshow items={focal} />
 
 
       <SectionBlock title={"FAQ"} children={<>Häufig gestellte Fragen beantworte ich hier direkt.</>} />
