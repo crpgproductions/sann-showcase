@@ -21,7 +21,7 @@ const projects = [
   },
   {
     name: "Videoproduktion",
-    description: "Hobby Videoprojekt, Erstelleung einiger Videos auf Youtube",
+    description: "Hobby Videoprojekt, Erstellung einiger Videos auf Youtube",
     tags: ["Clipchamp", "Shotcut", "Paintshop Pro", "Nvidia"],
     thumbnail: "/images/project3.jpg",
   }
