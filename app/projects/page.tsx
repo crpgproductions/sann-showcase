@@ -60,8 +60,6 @@ export default function Projects() {
         </a>
       </section>
 
-
-
       {/* Section 2 — Legacy portals */}
       <section /*style={{ borderBottom: "var(--border-subtle)" }}*/ className="w-full py-16">
         <SectionBlock title={"Showcase-ception"} children={<>Es gab schon ältere Showcases vor diesem hier, und diese beinhalteten wiederum einige Projekte, die ich in der Vergangenheit umgesetzt habe. Viel Spaß beim stöbern in der Vergangenheit!</>} />
@@ -71,14 +69,12 @@ export default function Projects() {
             {
               href: "https://c-sann.de/legacy",
               label: "Legacy",
-              //description: "Die erste Iteration. Betritt die Vergangenheit auf eigene Gefahr.",
-              screenshot: "/images/legacy.jpg"
+              screenshot: "./images/legacy.jpg"
             },
             {
               href: "https://c-sann.de/redux",
               label: "Redux",
-              //description: "Der zweite Versuch. Irgendwie auch nicht schlecht.",
-              screenshot: "/images/redux.jpg"
+              screenshot: "./images/redux.jpg"
             },
           ].map((portal) => (
             <a
@@ -114,7 +110,6 @@ export default function Projects() {
         </div>
       </section>
 
-
       {/* Section 3 — Other projects */}
       <section className="w-full py-16">
         <SectionBlock title={"Weitere Projekte"} children={<>Folgende Projekte können aus verschiedenen Gründen nicht in voller Pracht gezeigt werden, aber ein kleiner Einblick hinein ist allemal möglich.</>} />
@@ -127,7 +122,7 @@ export default function Projects() {
               {/* Thumbnail */}
               <button
                 onClick={() => setModalImage(project.thumbnail)}
-                className="relative w-full aspect-video bg-zinc-100 dark:bg-zinc-900 overflow-hidden"
+                className="relative w-full aspect-video bg-zinc-100 dark:bg-zinc-900 overflow-hidden cursor-pointer"
               >
                 <Image
                   src={project.thumbnail}

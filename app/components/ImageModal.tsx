@@ -21,12 +21,12 @@ export default function ImageModal({ src, onClose }: ImageModalProps) {
             className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
             onClick={onClose}
         >
-            <div className="relative max-w-5xl w-full h-[80vh] rounded-2xl overflow-hidden">
+            <div className="relative w-[95vw] max-w-[1400px] h-[90vh] rounded-2xl overflow-hidden">
                 <Image
                     src={src}
                     alt="Preview"
                     fill
-                    className="object-contain"
+                    className="object-cover"
                     sizes="100vw"
                     priority
                 />

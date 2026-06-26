@@ -4,6 +4,7 @@ const nextConfig: NextConfig = {
   /* config options here */
   output: "export",
   trailingSlash: false,
+  images: { unoptimized: true }, // Required because of static export
 
   async headers() {
     return [
