@@ -1,4 +1,3 @@
-import Image from "next/image";
 import PageSkeleton from "@/app/components/PageSkeleton";
 import { FolderOpen, User } from "lucide-react";
 import Logo from "./components/Logo";
@@ -21,7 +20,7 @@ export default function Home() {
     <PageSkeleton showLogo={false}>
 
       <div className="flex flex-col w-full">
-        <h1 className="font-light text-5xl tracking-tight text-black dark:text-zinc-50">Zeigen!</h1>
+        <h1 className="font-light text-5xl tracking-tight text-black dark:text-zinc-50 animate-slide-up">Zeigen!</h1>
         <Logo width={350} />
         <h2 className="font-light text-3xl tracking-tight text-black dark:text-zinc-50 mt-6">Frontend bauen. Testen. Optimieren.</h2>
       </div>

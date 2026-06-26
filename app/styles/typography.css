@@ -1,12 +1,29 @@
 @font-face {
-  font-family: "LondonMM";
-  src: url("/fonts/LondonMM.woff2") format("woff2"),
-    url("/fonts/LondonMM.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
+  font-family: "LondonMM-fallback";
+  font-weight: light;
+  src: local("Arial");
+  size-adjust: 95%;
+  ascent-override: 90%;
+  descent-override: 10%;
+  line-gap-override: 0%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+@font-face {
+  font-family: "LondonMM";
+  src: url("/fonts/LondonMM.woff2") format("woff2"),
+       url("/fonts/LondonMM.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "LondonMM", sans-serif;
+  opacity: 0;
+  animation: slideUp 0.6s ease 0.3s forwards;
 }
