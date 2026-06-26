@@ -1,16 +1,17 @@
 import PageSkeleton from "@/app/components/PageSkeleton";
 import { FolderOpen, User } from "lucide-react";
 import Logo from "./components/Logo";
+import Link from "next/link";
 
 export default function Home() {
   const portals = [
     {
-      href: "./about",
+      href: "/about",
       label: "Über mich",
       icon: User,
     },
     {
-      href: "./projects",
+      href: "/projects",
       label: "Projekte",
       icon: FolderOpen,
     },
@@ -35,7 +36,7 @@ export default function Home() {
             const Icon = portal.icon;
 
             return (
-              <a
+              <Link
                 key={portal.label}
                 href={portal.href}
                 className="group flex flex-col gap-4"
@@ -54,7 +55,7 @@ export default function Home() {
                     {portal.label}
                   </h3>
                 </div>
-              </a>
+              </Link>
             );
           })}
         </div>
