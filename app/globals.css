@@ -156,6 +156,12 @@ body {
   animation: aurora 60s linear infinite;
 }
 
+@media (max-width: 767px) {
+  .aurora-animation {
+    display: none;
+  }
+}
+
 /* --------------------------------------- */
 /* Slide animation for headlines */
 /* --------------------------------------- */

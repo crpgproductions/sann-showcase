@@ -162,7 +162,7 @@ export default function About() {
       <FocalSlideshow items={focal} />
 
 
-      <SectionBlock title={"FAQ"} children={<>Häufig gestellte Fragen beantworte ich hier direkt.</>} />
+      <SectionBlock title={"FAQ"} children={<>Häufig gestellte Fragen beantworte ich hier direkt.</>} className="mt-16 " />
       <Accordion items={faq} />
 
     </PageSkeleton>

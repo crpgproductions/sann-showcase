@@ -17,12 +17,12 @@ export const AuroraBackground = ({
         <main>
             <div
                 className={cn(
-                    "relative flex flex-col min-h-screen items-center justify-center bg-zinc-50 dark:bg-zinc-900 text-slate-950 transition-bg",
+                    "relative flex flex-col min-h-screen items-center justify-center bg-zinc-200 dark:bg-zinc-900 text-slate-950 transition-bg",
                     className
                 )}
                 {...props}
             >
-                <div className="absolute inset-0 overflow-hidden">
+                <div className="absolute inset-0 overflow-hidden hidden sm:block">
                     <div
                         className={cn(
                             `
