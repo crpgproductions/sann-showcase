@@ -64,7 +64,7 @@ export default function FocalSlideshow({ items }: FocalSlideshowProps) {
     const Icon = iconMap[activeItem.iconName];
 
     return (
-        <div className="flex items-center gap-4 w-full sm:w-1/2">
+        <div className="flex items-center gap-4 w-full sm:w-1/2 mx-auto">
 
             {/* Left arrow — hidden on mobile */}
             <button
