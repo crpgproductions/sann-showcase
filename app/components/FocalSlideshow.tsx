@@ -10,8 +10,9 @@ const iconMap: Record<string, LucideIcon> = {
 };
 
 interface FocalItem {
+    title: string;
     iconName: string;
-    text?: string;
+    text?: React.ReactNode;
     tags?: string[];
 }
 
@@ -64,7 +65,7 @@ export default function FocalSlideshow({ items }: FocalSlideshowProps) {
     const Icon = iconMap[activeItem.iconName];
 
     return (
-        <div className="flex items-center gap-4 w-full sm:w-1/2 mx-auto">
+        <div className="flex items-center gap-4 w-full lg:w-1/2 mx-auto">
 
             {/* Left arrow — hidden on mobile */}
             <button
@@ -87,7 +88,10 @@ export default function FocalSlideshow({ items }: FocalSlideshowProps) {
                     transition: "opacity 200ms ease, transform 200ms ease",
                 }}
             >
-                {Icon && <Icon size={72} className="text-zinc-300 dark:text-zinc-600" />}
+                <div className="flex items-center gap-3">
+                    {Icon && <Icon size={72} className="text-zinc-300 dark:text-zinc-600" />}
+                    
+                </div>
                 {activeItem.text && (
                     <p className="text-sm text-zinc-500 dark:text-zinc-400 leading-7">
                         {activeItem.text}

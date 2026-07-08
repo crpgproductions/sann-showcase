@@ -69,12 +69,12 @@ export default function Projects() {
             {
               href: "https://c-sann.de/legacy",
               label: "Legacy",
-              screenshot: "./images/legacy.jpg"
+              screenshot: "/images/legacy.jpg"
             },
             {
               href: "https://c-sann.de/redux",
               label: "Redux",
-              screenshot: "./images/redux.jpg"
+              screenshot: "/images/redux.jpg"
             },
           ].map((portal) => (
             <a

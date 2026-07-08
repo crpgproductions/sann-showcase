@@ -15,7 +15,7 @@ export default function PageSkeleton({ children, showLogo = true }: PageSkeleton
         before:absolute before:inset-0 before:backdrop-blur-sm before:-z-10">
         <Menu />
         {showLogo && (
-          <div className="mb-12 w-full">
+          <div className="mb-12 w-full mt-16 sm:mt-0">
             <Logo width={120} href="/" />
             <hr style={{ border: "none", borderTop: "var(--border-subtle)" }} className="mt-4 w-full" />
           </div>

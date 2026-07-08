@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { LucideIcon, GraduationCap, Building2, School, Zap, Briefcase, DraftingCompass, Laptop, Library } from "lucide-react";
 
 type IconType = React.ComponentType<{ className?: string }>;
@@ -34,6 +34,7 @@ interface TimelineProps {
 export default function Timeline({ items }: TimelineProps) {
     const [active, setActive] = useState(0);
     const activeItem = items[active];
+    const detailRef = useRef<HTMLDivElement>(null);
 
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full">
@@ -43,7 +44,14 @@ export default function Timeline({ items }: TimelineProps) {
                 {items.map((item, i) => (
                     <button
                         key={i}
-                        onClick={() => setActive(i)}
+                        onClick={() => {
+                            setActive(i);
+                            if (window.innerWidth < 768) {
+                                setTimeout(() => {
+                                    detailRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+                                }, 50);
+                            }
+                        }}
                         className="flex gap-6 group text-left cursor-pointer"
                     >
                         {/* Dot + line */}
@@ -106,7 +114,7 @@ export default function Timeline({ items }: TimelineProps) {
             </div>
 
             {/* Right — detail panel */}
-            <div className="flex flex-col gap-6 pt-1">
+            <div ref={detailRef} className="flex flex-col gap-6 pt-1">
 
                 <div className="w-full flex flex-col items-center justify-center gap-4">
                     {activeItem.iconRight && (

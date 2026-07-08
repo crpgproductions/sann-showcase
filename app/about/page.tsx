@@ -9,7 +9,7 @@ const journey = [
   {
     title: "Schule",
     detail: <><p>Der Schulunterricht machte mir Spaß und fiel mir leicht. Meine schulische Laufbahn würde ich dennoch nicht als einfach bezeichnen, denn es gab verschiedene
-      Hürden und Herausforderungen, welche nichts mit dem Schulunterricht zu tun hatten, die die Sache ein wenig herausfordernd machten. Doch ich habe es gemeistert und einen
+      Hürden und Herausforderungen, welche nichts mit dem Schulunterricht zu tun hatten, die die Sache ein wenig fordernd machten. Doch ich habe es gemeistert und einen
       erfolgreichen Abschluss vorzuweisen.</p></>,
     icons: ["education"],
     iconRight: "school",
@@ -35,10 +35,10 @@ const journey = [
     title: "Büroassistenz",
     description: "im Familienbetrieb",
     detail: <><p>Ich komme aus einer Maurermeisterfamilie, und wir hatten einen Betrieb, der schlüsselfertige Häuser baute. Viele denken, im Familienbetrieb zu arbeiten macht
-      die Dinge einfach. Das kann ich nicht behaupten. Ich musste schnell Verantwortung übernehmen, und auch Aufgaben übernehmen, die über mein eigentliches Feld hinausgingen, darunter auch Architektur und Marketing.</p>
+      die Dinge einfach. Das kann ich nicht behaupten. Ich musste schnell Verantwortung übernehmen, und auch Aufgaben übernehmen, die über mein eigentliches Feld hinausgingen. Darunter auch Architektur und Marketing.</p>
       <p className="mt-4">Da gerade eben auch im Internet die Vermarktung zunehmend an Bedeutung gewann, sah ich hier eine gewisse Chance. Ich baute die Firmenwebseite, damals noch ganz klassisch mit HTML4. Spätestens da war
         mir klar, was mein Spezialgebiet ist.</p>
-        <p>Ich arbeitete noch einige Jahre im Familienbetrieb, doch in der Mitte meiner 20er machte ich mir dann endlich einen kleinen Wunsch wahr: Informatik studieren.</p></>,
+      <p className="mt-4">Ich arbeitete noch einige Jahre im Familienbetrieb, doch in der Mitte meiner 20er machte ich mir dann endlich einen kleinen Wunsch wahr: Informatik studieren.</p></>,
     icons: ["work"],
     iconRight: "business",
     tags: ["Schriftverkehr", "Verträge aufsetzen", "Telefondienst", "Firmenwebsite bauen"],
@@ -46,9 +46,9 @@ const journey = [
   {
     title: "Studium",
     description: "Fachhochschule, Medieninformatik (B.Sc.)",
-    detail: <><p>Ich studierte Medieninformatik an der THM Friedberg. Zuvor musste ich jedoch noch das Fachabitur nachholen, das ich im einjährigen Schnelldurchlauf in der Form B vollzog.</p>
-      <p className="mt-4">Das Leben an der Hochschule war für mich durchaus ein Sprung in eine andere Welt. Die Module waren sehr unterschiedlich, und auch komplex, doch ich hatte ein klares Ziel und auch einen klaren
-      Weg vor Augen, und so meisterte ich auch das.</p>
+    detail: <><p>Ich studierte Medieninformatik an der THM Friedberg. Zuvor musste ich jedoch noch das Fachabitur nachholen, welches ich im einjährigen Schnelldurchlauf in der Form B vollzog.</p>
+      <p className="mt-4">Das Leben an der Hochschule war für mich durchaus ein Sprung in eine andere Welt. Die Module waren sehr unterschiedlich, und auch komplex, genauso wie die ganze Hochschulkultur an sich.
+        Doch ich hatte ein klares Ziel und auch einen klaren Weg vor Augen, und so meisterte ich auch das.</p>
       <p className="mt-4">Meine Bachelorarbeit befasste sich mit dem Thema Qualitätssicherung für moderne Webanwendungen. Daher mein Expertise im Bereich QA.</p></>,
     icons: ["education"],
     iconRight: "study",
@@ -71,7 +71,7 @@ export default function About() {
       title: "Was ist deine Devise?",
       content: <>
         <p>&quot;Reden ist Silber, <span className="line-through">schweigen</span> zeigen ist Gold.&quot;</p>
-        <p className="mt-4">So, oder ähnlich. Ich denke, die beste Möglichkeit etwas zu beweisen ist einfach zu zeigen was man kann.</p>
+        <p className="mt-4">So oder ähnlich. Ich denke, die beste Möglichkeit, etwas zu beweisen, ist einfach zu zeigen, was man kann.</p>
       </>
     },
     {
@@ -121,30 +121,30 @@ export default function About() {
     {
       title: "Entwicklung",
       iconName: "Monitor",
-      text: `Frontend Entwicklung ist ein sich sehr rasch entwickelndes und immer wieder stark veränderndes Thema. Ich stelle sicher, dass ich mit den Trends gehe, oder ihnen möglichst noch einen
+      text: <><span className="font-semibold">Frontend Entwicklung</span> ist ein sich sehr rasch entwickelndes und immer wieder stark veränderndes Thema. Ich stelle sicher, dass ich mit den Trends gehe, oder ihnen möglichst noch einen
       Schritt voraus bin. Aber dabei behalte ich auch immer die Traditionen im Auge. Ich bin zusammen mit dem Internet großgeworden. Ich kenne seine Entwicklung wie meine Hosentasche. Und das kommt mir
-      immer wieder zugute.`,
+        immer wieder zugute.</>,
       tags: ["Web-Frameworks", "Softwarearchitektur", "Best Practices", "KI richtig nutzen"],
     },
     {
       title: "Testing",
       iconName: "FlaskConical",
-      text: `Testing ist weit mehr als nur sicherzustellen, dass der Code läuft. Sicherheit, Geschwindigkeit, prüfen des Designs sowie der stetige Kontrolle aller gegebenen Anforderungen
-      in beliebiger Version gehören dazu.`,
+      text: <><span className="font-semibold">Testing</span> ist weit mehr als nur sicherzustellen, dass der Code läuft. Sicherheit, Geschwindigkeit, prüfen des Designs sowie der stetige Kontrolle aller gegebenen Anforderungen
+      in beliebiger Version gehören dazu.</>,
       tags: ["Sauberer Code", "Sicherheit", "Performance", "Accessibility"],
     },
     {
       title: "Planung",
       iconName: "Gauge",
-      text: `Von der ersten Idee, bis zur Wartung und später potentiellen Überarbeitung. Ich baue Frontends so, dass sie robust sind und den aktuellen Anforderungen entsprechen, aber
-      auch so dynamisch, dass sie sich jederzeit leicht wieder überarbeiten lassen.`,
+      text: <>Von der ersten Idee, bis zur Wartung und später potentiellen Überarbeitung. Ich baue Frontends so, dass sie robust sind und den aktuellen Anforderungen entsprechen, aber
+      auch so dynamisch, dass sie sich jederzeit leicht wieder überarbeiten lassen.</>,
       tags: ["End-to-End-Organisation", "Aufwandskalkulation"],
     },
     {
       title: "Psychologie & Design",
       iconName: "Brain",
-      text: `Ich erkunde gerne die menschliche Natur und verstehe gut, was ein Nutzer erwartet. Ich weiß auch, wie unterschiedlich und manchmal auch ungeduldig Nutzer sein können. Das sehe
-      ich als eine Herausforderung, die ich immer wieder gerne annehme.`,
+      text: <>Ich erkunde gerne die menschliche Natur und verstehe gut, was ein Nutzer erwartet. Ich weiß auch, wie unterschiedlich und manchmal auch ungeduldig Nutzer sein können. Das sehe
+      ich als eine Herausforderung, die ich immer wieder gerne annehme.</>,
       tags: ["UX", "Cognitive Load", "Erwartungshaltungen", "Impressionen"],
     }
   ];
